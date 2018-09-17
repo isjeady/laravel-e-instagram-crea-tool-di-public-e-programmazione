@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/home' ,[ 'uses' => 'InstagramController@login'] );
+Route::get('/home2' ,[ 'uses' => 'InstagramController@afterLogin'] );
+
+
