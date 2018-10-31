@@ -11,11 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+Route::get('/home', function () {
+    return view('home');
 });
 
-Route::get('/home' ,[ 'uses' => 'InstagramController@login'] );
-Route::get('/home2' ,[ 'uses' => 'InstagramController@afterLogin'] );
+Route::get('/', function () {
+    return view('home');
+});
 
+Route::get('/public_post', 'InstagramController@index');
 

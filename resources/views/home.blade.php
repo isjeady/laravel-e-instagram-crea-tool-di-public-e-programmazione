@@ -78,8 +78,8 @@
 
             <div class="content">
                 <div class="">
-                    Laravel <hr>
-                    {{ $response }}
+                    Home <hr>
+
                 </div>
             </div>
         </div>
